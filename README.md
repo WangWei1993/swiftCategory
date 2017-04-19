@@ -5,14 +5,13 @@
 添加View的x，y，width，height，centerX，centerY，maxY，maxX属性
 
 ```object
-/// 1. UIView分类的使用
-        let myView = UIView()
-        print(myView.x)
-        print(myView.y)
-        print(myView.centerX)
-        print(myView.centerY)
-        print(myView.maxX)
-        print(myView.maxY)
+let myView = UIView()
+print(myView.x)
+print(myView.y)
+print(myView.centerX)
+print(myView.centerY)
+print(myView.maxX)
+print(myView.maxY)
 
 ```
 
@@ -21,10 +20,9 @@ APP相关信息：获取App的版本号，App的版本，App的名称
 设备相关：获取设备的型号，设备UUID，获取设备名称（如iPhone：王伟的iPhone），系统版本号（iPhone，ipad，TV）的具体型号
 
 ```object
-/// 2. UIDevice分类的使用
-        debugPrint(UIDevice.current.appName)
-        debugPrint(UIDevice.current.modelName)
-        debugPrint(UIDevice.current.deviceModel)
+debugPrint(UIDevice.current.appName)
+debugPrint(UIDevice.current.modelName)
+debugPrint(UIDevice.current.deviceModel)
 
 ```
 
@@ -32,9 +30,7 @@ APP相关信息：获取App的版本号，App的版本，App的名称
 自定义返回一个UIBarButtonItem
 
 ```object
-
-/// 3. UIBarButtonItem分类的使用
-        let barButtonItem = UIBarButtonItem.itemWithTarget(target: self, action: #selector(ViewController.backClick), image: "", title: "", selectImage: "")
+let barButtonItem = UIBarButtonItem.itemWithTarget(target: self, action: #selector(ViewController.backClick), image: "", title: "", selectImage: "")
         print(barButtonItem)
 ```
 
